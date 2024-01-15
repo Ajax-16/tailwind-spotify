@@ -9,3 +9,22 @@
       @apply box-border;
     }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-oscuro-950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-oscuro-600
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

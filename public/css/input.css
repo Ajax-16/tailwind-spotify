@@ -35,8 +35,20 @@
   animation-range: 20% 50%;
 }
 
+.nav-element {
+  animation: backdrop-el linear both;
+  animation-timeline: scroll(root);
+  animation-range: 20% 50%;
+}
+
 @keyframes backdrop {
   to {
-    @apply bg-cyan-500;
+    @apply bg-oscuro-900;
+  }
+}
+
+@keyframes backdrop-el {
+  to {
+    @apply bg-oscuro-950;
   }
 }

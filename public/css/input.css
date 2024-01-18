@@ -32,23 +32,28 @@
 .navigation {
   animation: backdrop linear both;
   animation-timeline: scroll(root);
-  animation-range: 20% 50%;
+  animation-range: 20% 100%;
 }
 
 .nav-element {
-  animation: backdrop-el linear both;
+  animation: appear linear both;
   animation-timeline: scroll(root);
-  animation-range: 20% 50%;
+  animation-range: 20% 100%;
+}
+
+.important:hover .play{
+  animation: appear both 150ms linear;
+}
+
+@keyframes appear {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes backdrop {
   to {
-    @apply bg-oscuro-900;
-  }
-}
-
-@keyframes backdrop-el {
-  to {
-    @apply bg-oscuro-950;
+    @apply bg-gray-800;
   }
 }

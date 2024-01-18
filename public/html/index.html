@@ -1,255 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eñefy</title>
-    <link rel="stylesheet" href="../css/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body class="bg-black">
-    <div class="flex flex-row">
-      <div
-        class="min-w-64 border-separate p-2 mr-2 sticky top-0 self-start overflow-y-auto overflow-x-hidden h-screen"
-      >
-        <div class="bg-oscuro-950 rounded mb-4">
-          <div
-            class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3"
-          >
-            <i class="fa-solid fa-house"></i>Inicio
-          </div>
-          <div
-            class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 hover:text-white flex items-center gap-3"
-          >
-            <i class="fa-solid fa-search"></i>Buscar
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eñefy</title>
+  <link rel="stylesheet" href="../css/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black">
+
+  <!-- INICIO MAQUETACIÓN -->
+
+  <div class="flex flex-row">
+
+    <!-- INICIO MENÚ LATERAL -->
+
+    <div class="min-w-64 border-separate p-2 mr-2 sticky top-0 self-start overflow-y-auto overflow-x-hidden h-screen">
+
+      <!-- INICIO HOME MENÚ -->
+
+      <div class="bg-oscuro-950 rounded mb-4">
+        <div
+          class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3">
+          <i class="fa-solid fa-house"></i>Inicio
         </div>
-        <div class="bg-oscuro-950 rounded pb-1">
-          <div class="flex flex-row items-center">
-            <div
-              class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3"
-            >
-              <i class="fa-solid fa-book"></i>
-              Tu biblioteca
-            </div>
-            <div
-              class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-
-          <div class="flex flex-row items-center">
-            <div
-              class="text-oscuro-300 transition-colors cursor-pointer text-sm pb-4 px-4 py-4 hover:text-white flex items-center gap-3"
-            >
-              <i class="fa-solid fa-search"></i>
-            </div>
-            <div
-              class="text-oscuro-300 transition-colors cursor-pointer text-sm pb-4 px-4 py-4 ml-16 hover:text-white flex items-center justify-end gap-3"
-            >
-              Recientes<i class="fa-solid fa-list"></i>
-            </div>
-          </div>
-
-          <!-- ELEMENTOS DE LIBRERIAS -->
-
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i.scdn.co/image/ab67616d0000b2737d95383aa4544f540f26c513"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Extremo</div>
-              <div class="text-oscuro-300 text-sm">Davivi</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i1.sndcdn.com/artworks-000741044260-zqtcap-t500x500.jpg"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Top Éxitos</div>
-              <div class="text-oscuro-300 text-sm">Eñefy</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://m.media-amazon.com/images/I/41hWc41TWvL._UF894,1000_QL80_.jpg"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Imprescindibles</div>
-              <div class="text-oscuro-300 text-sm">Eñefy</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i.scdn.co/image/ab67616d0000b2735e3e0d9fd12dfe795d5c5d62"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Clásicos</div>
-              <div class="text-oscuro-300 text-sm">Eñefy</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i.scdn.co/image/ab67706c0000da84c9cc2da735a40d0e7a5247fb"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Reggaeton</div>
-              <div class="text-oscuro-300 text-sm">Eñefy</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i.scdn.co/image/ab67616d00001e024b0ddebba0d5b34f2a2f07a4"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">GORILLAZ!!</div>
-              <div class="text-oscuro-300 text-sm">Davivi</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900"
-          >
-            <img
-              class="w-14"
-              src="https://i.scdn.co/image/ab67616d0000b273c73b3488da4b9abf2697436a"
-              alt=""
-            />
-            <div
-              class="inline-block whitespace-nowrap text-ellipsis overflow-hidden"
-            >
-              <div class="text-white text-lg">Puro rojismo</div>
-              <div class="text-oscuro-300 text-sm">Davivi</div>
-            </div>
-          </div>
+        <div
+          class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 hover:text-white flex items-center gap-3">
+          <i class="fa-solid fa-search"></i>Buscar
         </div>
-        <div class="h-28 w-full"></div>
       </div>
 
+      <!-- FIN HOME MENÚ -->
 
-      <div class="flex flex-col w-full">
+      <!-- INICIO LIBRERIA -->
 
-        <div class="h-2 fixed top-0 bg-black w-full"></div>
-
-        <div class="body w-[99.5%] min-h-svh bg-oscuro-950 my-2 mr-2 rounded pb-3">
-
-          <div class="navigation h-14 w-full rounded-t sticky top-2 flex flex-row items-center justify-start gap-1">
-            <div class="nav-element h-8 w-8 bg-black rounded-full ml-2 flex justify-center items-center cursor-pointer text-oscuro-300 hover:text-white transition-colors">
-              <i class="fa-solid fa-angle-left text-lg"></i>
-            </div>
-            <div class="nav-element h-8 w-8 bg-black rounded-full ml-2 flex justify-center items-center cursor-pointer text-oscuro-300 hover:text-white transition-colors">
-              <i class="fa-solid fa-angle-right text-lg"></i>
-            </div>
+      <div class="bg-oscuro-950 rounded pb-1">
+        <div class="flex flex-row items-center">
+          <div
+            class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3">
+            <i class="fa-solid fa-book"></i>
+            Tu biblioteca
           </div>
+          <div
+            class="text-oscuro-300 transition-colors cursor-pointer text-xl pb-4 px-4 py-4 hover:text-white flex items-center gap-3">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
 
-          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-4 gap-2">
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b273fc915b69600dce2991a61f13" alt="">
+        <div class="flex flex-row items-center">
+          <div
+            class="text-oscuro-300 transition-colors cursor-pointer text-sm pb-4 px-4 py-4 hover:text-white flex items-center gap-3">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <div
+            class="text-oscuro-300 transition-colors cursor-pointer text-sm pb-4 px-4 py-4 ml-16 hover:text-white flex items-center justify-end gap-3">
+            Recientes<i class="fa-solid fa-list"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i.scdn.co/image/ab67616d0000b2737d95383aa4544f540f26c513" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Extremo</div>
+            <div class="text-oscuro-300 text-sm">Davivi</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i1.sndcdn.com/artworks-000741044260-zqtcap-t500x500.jpg" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Top Éxitos</div>
+            <div class="text-oscuro-300 text-sm">Eñefy</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://m.media-amazon.com/images/I/41hWc41TWvL._UF894,1000_QL80_.jpg" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Imprescindibles</div>
+            <div class="text-oscuro-300 text-sm">Eñefy</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i.scdn.co/image/ab67616d0000b2735e3e0d9fd12dfe795d5c5d62" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Clásicos</div>
+            <div class="text-oscuro-300 text-sm">Eñefy</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i.scdn.co/image/ab67706c0000da84c9cc2da735a40d0e7a5247fb" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Reggaeton</div>
+            <div class="text-oscuro-300 text-sm">Eñefy</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i.scdn.co/image/ab67616d00001e024b0ddebba0d5b34f2a2f07a4" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">GORILLAZ!!</div>
+            <div class="text-oscuro-300 text-sm">Davivi</div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-3 p-2 m-1 cursor-pointer rounded hover:bg-oscuro-900">
+          <img class="w-14" src="https://i.scdn.co/image/ab67616d0000b273c73b3488da4b9abf2697436a" alt="" />
+          <div class="inline-block whitespace-nowrap text-ellipsis overflow-hidden">
+            <div class="text-white text-lg">Puro rojismo</div>
+            <div class="text-oscuro-300 text-sm">Davivi</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN LIBRERIA -->
+
+      <div class="h-28 w-full"></div>
+    </div>
+
+    <!-- FIN MENÚ LATERAL-->
+
+    <!-- INICIO CUERPO PÁGINA -->
+
+    <div class="flex flex-col w-full">
+
+      <div class="h-2 fixed top-0 bg-black w-full"></div> <!-- Mantener borde redondeado arriba -->
+
+      <div class="body w-[99.5%] min-h-svh bg-oscuro-950 my-2 mr-2 rounded pb-3">
+
+        <!-- INICIO NAVEGACIÓN -->
+
+        <div class="navigation h-14 w-full rounded-t sticky top-2 flex flex-row items-center justify-start gap-1">
+          <div
+            class="nav-element h-8 w-8 bg-black opacity-80 rounded-full ml-2 flex justify-center items-center cursor-pointer text-oscuro-300 hover:text-white transition-colors">
+            <i class="fa-solid fa-angle-left text-lg"></i>
+          </div>
+          <div
+            class="nav-element h-8 w-8 bg-black opacity-80 rounded-full ml-2 flex justify-center items-center cursor-pointer text-oscuro-300 hover:text-white transition-colors">
+            <i class="fa-solid fa-angle-right text-lg"></i>
+          </div>
+        </div>
+
+        <!-- FIN NAVEGACIÓN -->
+
+        <div class="text-3xl text-white p-5 font-bold">
+          ¡Buenas tardes!
+        </div>
+
+        <!-- ALBUMES Y ARTISTAS ESCUCHADOS RECIENTEMENTE (ELEMENTOS PARTE SUPERIOR) -->
+
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-4 gap-2">
+          <div
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b273fc915b69600dce2991a61f13"
+                alt="">
               <div class="text-white font-bold">Mercury - Acts 1 & 2</div>
             </div>
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab6761610000517412434039f9760438626cf90b" alt="">
-              <div class="text-white font-bold">Extremoduro</div>
-            </div>
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b273661d019f34569f79eae9e985" alt="">
-              <div class="text-white font-bold">Plastic Beach</div>
-            </div>
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d00001e020092c0219cb7b52a9f4b48bf" alt="">
-              <div class="text-white font-bold">RAT BOY</div>
-            </div>
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d00001e020ea1ecb2d5271c2db402b0c2" alt="">
-              <div class="text-white font-bold">Hail To The King</div>
-            </div>
-            <div class="bg-neutral-600 rounded flex flex-row justify-start items-center gap-2 h-16 cursor-pointer">
-              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b2735a0356dd4c5822509208f525" alt="">
-              <div class="text-white font-bold">A Night At The Opera</div>
-            </div>
-          </div>
-
-      </div>
-        
-        <div class="h-28 w-full"></div>
-      </div>
-      
-      <div class="fixed bottom-0 left-0 right-0 bg-black h-28">
-        <div class="flex justify-between items-center h-full">
-          <div class="text-white w-96 p-3">
-            <div class="flex flex-row items-center">
-              <img
-                class="w-20 rounded-sm"
-                src="https://i.scdn.co/image/ab67616d0000b2739c8e10eba0904524f161f872"
-                alt=""
-              />
-              <div class="flex flex-col justify-start ml-4 w-full">
-                <div class="text-white text-lg">Jesucristo García</div>
-                <div class="text-oscuro-300">Extremoduro</div>
-              </div>
-            </div>
-          </div>
-          <div class="text-white">
-            <div class="flex justify-center items-center">
-              <audio
-                src="../resource/tomp3.cc - Jesucristo García.mp3"
-                controls
-              ></audio>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
             </div>
           </div>
           <div
-            class="text-white w-96 p-3 flex justify-end pr-12 items-center gap-10"
-          >
-            <i class="fa-solid fa-gear cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
-            <i class="fa-solid fa-desktop cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
-            <i class="fa-solid fa-bars cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab6761610000517412434039f9760438626cf90b"
+                alt="">
+              <div class="text-white font-bold">Extremoduro</div>
+            </div>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
+            </div>
           </div>
+          <div
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b273661d019f34569f79eae9e985"
+                alt="">
+              <div class="text-white font-bold">Plastic Beach</div>
+            </div>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
+            </div>
+          </div>
+          <div
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d00001e020092c0219cb7b52a9f4b48bf"
+                alt="">
+              <div class="text-white font-bold">RAT BOY</div>
+            </div>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
+            </div>
+          </div>
+          <div
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d00001e020ea1ecb2d5271c2db402b0c2"
+                alt="">
+              <div class="text-white font-bold">Hail To The King</div>
+            </div>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
+            </div>
+          </div>
+          <div
+            class="important bg-neutral-600 rounded flex flex-row justify-between items-center h-20 cursor-pointer hover:bg-oscuro-500 transition-colors">
+            <div class="h-full flex flex-row items-center gap-2">
+              <img class="h-full rounded-s" src="https://i.scdn.co/image/ab67616d0000b2735a0356dd4c5822509208f525"
+                alt="">
+              <div class="text-white font-bold">A Night At The Opera</div>
+            </div>
+            <div
+              class="play h-14 w-14 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+              <i class="fa-solid fa-play text-lg"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIN ALBUMES Y ARTISTAS ESCUCHADOS -->
+
+        <div class="px-5 pt-5 pb-3 font-bold flex justify-between items-center">
+          <a class="hover:underline text-2xl text-white " href="#">Hecho para tí</a>
+          <a class="hover:underline text-sm text-oscuro-300" href="#">Mostrar todos</a>
+        </div>
+
+        <!-- INICIO RECOMENDACIONES -->
+
+        <div class="flex sm:flex-row flex-col gap-2 p-3">
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebfc4aaacf4b09c75cc2144730/1/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 1</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Robe, Extremoduro, Marea y más</div>
+
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb337d671a32b2f44d4a4e6cf2/2/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 2</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Gorillaz, Imagine Dragons, Artic Monkeys y más</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba1d45585ab07d4bd7fe53351/3/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 3</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Laufey, Thomas Day, Zeph y más</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb9ad50e478a469448c6f369df/4/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 4</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Bad Bunny, C. Tangana y más</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb14add0d3419426b84158b913/5/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 5</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Bizarrap, Alex Rose y más</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb28bc97cf7dad73f49e6b987d/6/es/default"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Mix Diario 6</div>
+            <div class="text-oscuro-300 pt-1 text-sm">La Maravillosa Orquesta del Alcohol, Melendi, IZAL y más</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/WClOP8V-GW89qSUhg4j6Ug==/c2VzZXNlc2VzZXNlc2VzZQ=="
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Descubrimiento semanal</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Temas elegidos especialmente para ti.</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded"
+                src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb14add0d3419426b84158b913/es"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Radar de Novedades</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Las novedades de los artistas que sigues</div>
+          </div>
+
+        </div>
+      
+        <!-- FIN RECOMENDACIONES -->
+
+        <div class="px-5 pt-5 pb-3 font-bold flex justify-between items-center">
+          <a class="hover:underline text-2xl text-white " href="#">Tus artistas favoritos</a>
+          <a class="hover:underline text-sm text-oscuro-300" href="#">Mostrar todos</a>
+        </div>
+
+        <!-- INICIO ARTISTAS -->
+
+        <div class="flex sm:flex-row flex-col gap-2 p-3">
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full drop-shadow-lg"
+                src="https://i.scdn.co/image/ab6761610000517412434039f9760438626cf90b"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Extremoduro</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5eb3e5de222aa09ea8c106f2bbb"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Estopa</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5ebfc4aaacf4b09c75cc2144730"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Robe</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5eb13de72784b1c89d3dcc5eefc"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Rayden</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5eb25411bdbb7f4c629bf08061b"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Vetusta Morla</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5eb69b92908b14aa8f0b4cd175d"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Melendi</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab6761610000e5eb1e67179609693ea704b6acd1"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Lori Meyers</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+          <div
+            class="important bg-neutral-900 min-w-36 w-[12.5%] rounded-lg p-4 flex flex-col cursor-pointer hover:bg-oscuro-900 transition-colors">
+            <div class="relative">
+              <img class="rounded-full"
+                src="https://i.scdn.co/image/ab676161000051744e4ec37d6100fb05f2a24d3b"
+                alt="">
+              <div
+                class="play absolute bottom-0 right-0 h-12 w-12 m-3 rounded-full bg-green-500 flex justify-center items-center shadow-md opacity-0 translate-y-1">
+                <i class="fa-solid fa-play text-lg"></i>
+              </div>
+            </div>
+            <div class="text-white pt-3 font-bold text-md text-ellipsis overflow-hidden">Leiva</div>
+            <div class="text-oscuro-300 pt-1 text-sm">Artista</div>
+          </div>
+
+        </div>
+
+        <!-- FIN ARTISTAS -->
+
+      </div>
+
+      <div class="h-28 w-full"></div>
+    </div>
+
+    <!-- FIN CUERPO PÁGINA -->
+
+    <!-- INICIO MENÚ INFERIOR -->
+
+    <div class="fixed bottom-0 left-0 right-0 bg-black h-28">
+      <div class="flex justify-between items-center h-full">
+        <div class="text-white w-96 p-3">
+          <div class="flex flex-row items-center">
+            <img class="w-20 rounded-sm" src="https://i.scdn.co/image/ab67616d0000b2739c8e10eba0904524f161f872"
+              alt="" />
+            <div class="flex flex-col justify-start ml-4 w-full">
+              <div class="text-white text-lg">Jesucristo García</div>
+              <div class="text-oscuro-300">Extremoduro</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-white">
+          <div class="flex justify-center items-center">
+            <audio src="../resource/tomp3.cc - Jesucristo García.mp3" controls></audio>
+          </div>
+        </div>
+        <div class="text-white w-96 p-3 flex justify-end pr-12 items-center gap-10">
+          <i class="fa-solid fa-gear cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
+          <i class="fa-solid fa-desktop cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
+          <i class="fa-solid fa-bars cursor-pointer text-oscuro-500 hover:text-white transition-colors"></i>
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- FIN MENÚ INFERIOR -->
+
+  </div>
+
+    <!-- FIN MAQUETACIÓN -->
+
+</body>
+
 </html>
